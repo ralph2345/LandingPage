@@ -1,0 +1,23 @@
+//Colors
+$primary_color: #102B3C;
+$secondary_color_dark: #205375;
+$secondary_color_light: #F0EFEF;
+$accent: #ED1C24;
+
+//Regular Fonts
+@font-face { 
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+
+//margins, paddings
+$base_margin: 40px;
+$base_padding: 20px;
+
+//Font sizes
+$font_size_sm: 0.75rem;
+$font_size_md: 1rem;
+$font_size_lg: 1.25rem;
+$font_size_xl: 1.5rem;
+$font_size_xxl: 2rem;
+$font_size_xxxl: 2.5rem;
