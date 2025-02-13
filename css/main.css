@@ -45,6 +45,7 @@ body {
 }
 .main-content .content .content-left .btn {
   background-color: #ED1C24;
+  font-family: "Ubuntu", sans-serif;
   color: white;
   padding: 20px;
   border: none;
