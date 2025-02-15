@@ -62,7 +62,6 @@ body {
         align-items: center;
         flex-direction: row;
         margin: $base_margin;
-        //background-color: $secondary_color_light;
     
         .content-left {
             flex: 2;
@@ -137,13 +136,35 @@ footer {
     }
 }
 
-//Responsive design for tablet and mobile
+// For screens with a maximum width of 800px
+@media screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
+    .main-content {
+        flex: 1; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    footer {
+        flex-shrink: 0; 
+    }
+}
+
+//Tablet screens
 @media screen and (max-width: 768px) {
     body {
         min-height: 100vh;
         background-size: cover;
         background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .logo {
@@ -158,6 +179,11 @@ footer {
 
     .main-content {
         margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
 
         .content {
             flex-direction: column;
@@ -196,6 +222,7 @@ footer {
 
     footer {
         margin-top: 20px;
+        align-self: flex-end;
 
         .footer-content {
             .first-footer, 
@@ -213,6 +240,7 @@ footer {
     }
 }
 
+//Mobile screens
 @media screen and (max-width: 480px) {
     .main-content .content {
         .content-left {
